@@ -12,3 +12,30 @@
    padding-top: 5%;
     text-align: center;
 }
+.f{
+    padding-top: 13%;
+    padding-left: 20%;
+    
+}
+.formback{
+    background-color: rgba(0, 255, 255, 0.152);
+   
+    width: 500px;
+    height: 200px;
+    margin-left: 35%;
+    margin-top: 10%;
+}
+.city{
+    width: 300px;
+    height: 25px;
+    font-weight: bold;
+}
+.submit{
+    font-size: 20px;
+    width: 100px;
+    height: 30px;
+    border-radius: 5%;
+    margin-top: 6%;
+    margin-left: 25%;
+    font-weight: b;
+}
