@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Landing Page</title>
+        <link rel="stylesheet" type="text/css" href="index.css">
+    </head>
+    <body>
+        <div class="nav">
+            <div class="name">Tharanga Dilshani</div>
+            <div class="attribute">
+                <a href="#" onclick="showSection('about')">About</a>
+                <a href="#" onclick="showSection('skill')">Skills</a>
+                <a href="#" onclick="showSection('project')">Projects</a>
+                <a href="#" onclick="showSection('resume')">Resume</a>
+                <a href="#" onclick="showSection('contact')">Contact</a>
+        
+            </div>
+        </div>
+        <section id="about">
+            <div class="content">
+                <div class="data">
+                 <div class="hello" >Hello, It's me</div>
+                 <div class="n">Tharanga Dilshani</div>
+                 <p class="para">I'm Information Technology student. I consider my self a responsible and orderly person.
+                     <br/>I'm undergratuated student from University of Jaffna. <br/>
+                     I have honed my skills in web designing, front-end design and UI/UX design.  
+                 </p>
+                </div> 
+               <div class="photo">
+                 <img src="./img/photo.png" class="image" />
+               </div>  
+                 
+             </div>
+        </section>
+        <section id="skill">
+            <div class="details">
+                <div class="topic">MY SKILLS</div>
+                <div class="all">
+                    <div class="tech">Technical Skills</div>
+                    <ul class="tskil">        
+                        <li>html</li>
+                        <li>CSS</li>
+                        <li>Java</li>
+                        <li>JavaScript</li>
+                        <li>React</li>
+                    </ul>
+                    <div class="pro">Professional Skills</div>
+                    <ul class="pskil">
+                        <li>Communication</li>
+                        <li>Problem Solving</li>
+                        <li>Creativity</li>
+                        <li>Team Work</li>
+                    </ul>
+
+                </div>
+                <div class="tagimg">
+                    <img src="./img/html.png" />
+                    <img src="./img/css.png" />
+                    <img src="./img/java.png" />
+                    <img src="./img/js.png" />
+                    <img src="./img/react.png" />
+
+                </div>
+               
+            </div>
+            
+
+        </section>
+        <section id="project">
+            <div class="details">
+                <div class="topic">My Projects</div>
+                <div class="prtable">
+                    <table class="p1">
+                        <tr>
+                            <td class="ptopic">Landing Page</td>
+                        </tr>
+                        <tr>
+                            <td>This web application shows the details about Sri Lankan tourism and the beautiful places in Sri Lanka.<br/>
+                            Used Technologies are: html,css and javascript</td>
+                        </tr>
+                        <tr>
+                            <td ><img src="./img/landing.PNG" class="primage"/></td>
+                        </tr>
+                    </table>
+                    <table class="p1">
+                        <tr>
+                            <td class="ptopic">Student Management System</td>
+                        </tr>
+                        <tr>
+                            <td>This web application for the school to manage their student's details using this<br/>
+                            Used Technologies are: react js for front-end and springboote for backend</td>
+                        </tr>
+                        <tr>
+                            <td ><img src="./img/stu1.PNG" class="primage"/></td>
+                        </tr>
+                    </table>
+                </div>
+                
+            </div>
+        </section>
+        <section id="resume">
+            <div class="details">
+                <div class="topic">My Resume</div>
+                <div class="res">
+                    <img src="./img/cv.PNG" class="cv"/>
+                    <div class="cvlink">You can download my resume now:<br/>
+                    <a href="https://drive.google.com/file/d/1jps97VblaaxzW0hLBx7GoyRpvvqBV0ds/view?usp=sharing" class="dow">Download CV</a></div>
+                </div>
+                
+            </div>
+        </section>
+        <section id="contact">
+            <div class="details">
+                <div class="topic">Contact Me</div>
+                <div class="cm">
+                   <b>You can contact me using my e-mail or my phone number</b> <br/>
+                    E-mail:- gunawardhanatharanga450@gmail.com<br/>
+                    Phone Number:- +94 763556442
+                </div>
+            </div>
+        </section>
+
+        <div class="footer">
+             &copy; Tharanga Dilshani. All Rights Reserved.
+            </div>
+
+        </div>
+
+        <script>
+            function showSection(sectionId) {
+                const section = document.getElementById(sectionId);
+                if (section) {
+                    section.scrollIntoView({ behavior: 'smooth' });
+                }
+            }
+            </script>
+        
+    </body>
+</html>
