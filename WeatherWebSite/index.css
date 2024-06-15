@@ -1,0 +1,14 @@
+.main{
+    background-image: url('./img/weather.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    opacity: 0.8;
+}
+.topic{
+    font-family:cursive;
+    font-weight: bold;
+    font-size: 30px;
+   padding-top: 5%;
+    text-align: center;
+}
