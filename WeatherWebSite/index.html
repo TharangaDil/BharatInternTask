@@ -1,31 +1,30 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <link rel="stylesheet" type="text/css" href="index.css">
-    </head>
-    <body>
-        <div class="main">
-            <section id="checkcity">
-                <div class="topic">Weather App</div>
-                <div class="formback">
-                 <form class="f">
-                     <input type="text" id="city" class="city"/><br/>
-                     <input type="submit" value="SUBMIT" id="submit" class="submit"/>
+<head>
+    <link rel="stylesheet" type="text/css" href="index.css">
+</head>
+<body>
+    <div class="main">
+        <section id="checkcity">
+            <div class="topic">Weather App</div>
+            <div class="formback">
+                <form class="f">
+                    <input type="text" id="city" class="city"/><br/>
+                    <input type="button" value="SUBMIT" id="submit" class="submit"/>
                 </form>
-     
-                </div>
-                <div>You can submit your city and check current weather in your</div>
+            </div>
+            <div>You can submit your city and check current weather in your</div>
+        </section>
 
-            </section>
-          
-           <section id="weatherresult">
-            <div>Current Weather: </div>
-            
-
-           </section>
-          
-        </div>
-
-       
-    </body>
+        <section id="weatherresult">
+            <div>
+                <h2 id="output"></h2>
+                <p id="temp"></p>
+                <p id="description"></p>
+                <p id="wind"></p>
+            </div>
+        </section>
+    </div>
+    <script src="index.js"></script>
+</body>
 </html>
