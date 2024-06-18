@@ -39,3 +39,40 @@
     margin-left: 25%;
     font-weight: b;
 }
+.resultpage{
+    background-image: url('./img/resultimg.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    opacity: 0.8;
+}
+
+
+.output{
+    padding-left: 40%;
+    font-size: 30px;
+    font-family: cursive;
+    font-weight: bold;
+    padding-top: 5%;
+}
+.formout{
+    background-color: rgba(0, 255, 255, 0.152);
+    width: 500px;
+    height: 200px;
+    margin-left: 35%;
+    margin-top: 5%;
+}
+.fresult{
+    padding-top: 8%;
+    padding-left: 20%;
+    font-size: 20px;
+}
+span{
+    font-weight: bold;
+}
+.sen{
+    font-family: monospace;
+    font-size: 16px;
+    padding-left: 38%;
+    padding-top: 3%;
+}
