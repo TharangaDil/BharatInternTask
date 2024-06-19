@@ -5,40 +5,42 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
     <link rel="stylesheet" type="text/css" href="index.css">
-    <style>
-        .section {
-            display: none;
-        }
-        .section.active {
-            display: block;
-        }
-    </style>
+   
 </head>
 <body>
+    <div id="navbar" class="nav">
+        <div class="attribute">
+            <a href="#" onclick="showSection('about')">About</a>
+            <a href="#" onclick="showSection('skill')">Skills</a>
+            <a href="#" onclick="showSection('project')">Projects</a>
+            <a href="#" onclick="showSection('resume')">Resume</a>
+            <a href="#" onclick="showSection('contact')">Contact</a>
+        </div>
+    </div>
+
     <div id="about" class="about section active">
         <div class="content">
             <div class="data">
-                <div class="hello" >Hello, It's me</div>
-                <div class="n" >Tharanga Dilshani</div>
+                <div class="hello">Hello, It's me</div>
+                <div class="n">Tharanga Dilshani</div>
                 <p class="para">I'm an Information Technology student. I consider myself a responsible and orderly person.
                     <br/>I'm an undergraduate student from the University of Jaffna. <br/>
                     I have honed my skills in web designing, front-end design, and UI/UX design.  
                 </p>
             </div> 
-            <div >
+            <div class="photo">
                 <img src="./img/photo.png" class="image" />
             </div>
-            <div>
-                <div>
-                    <button onclick="showSection('about')">About</button> 
-                    <button onclick="showSection('skill')">Skills</button> 
-                    <button onclick="showSection('project')">Projects</button>
-                    <button onclick="window.open('https://drive.google.com/file/d/1jps97VblaaxzW0hLBx7GoyRpvvqBV0ds/view?usp=sharing', '_blank')">Resume</button>
-                    <button onclick="showSection('contact')">Contact</button> 
+            <div class="btn">
+                <button onclick="showSection('about')">ABOUT</button> 
+                <button onclick="showSection('skill')">SKILLS</button> 
+                <button onclick="showSection('project')">PROJECTS</button><br/>
+                <div class="btn2">
+                    <button onclick="window.open('https://drive.google.com/file/d/1jps97VblaaxzW0hLBx7GoyRpvvqBV0ds/view?usp=sharing', '_blank')">RESUME</button>
+                    <button onclick="showSection('contact')">CONTACT</button> 
                 </div>
             </div>
         </div>
-        
     </div>
     
     <div id="skill" class="skill section">
@@ -70,6 +72,7 @@
             </div>
         </div>
     </div>
+    
     <div id="project" class="project section">
         <div class="details">
             <div class="topic">My Projects</div>
@@ -101,6 +104,16 @@
             </div>
         </div>
     </div>
+    
+    <div id="resume" class="resume section">
+        <div class="details">
+            <div class="topic">My Resume</div>
+            <div class="resume-content">
+                <button onclick="window.open('https://drive.google.com/file/d/1jps97VblaaxzW0hLBx7GoyRpvvqBV0ds/view?usp=sharing', '_blank')">View Resume</button>
+            </div>
+        </div>
+    </div>
+    
     <div id="contact" class="contact section">
         <div class="details">
             <div class="topic">Contact Me</div>
@@ -111,9 +124,11 @@
             </div>
         </div>
     </div>
+    
     <div class="footer">
         &copy; Tharanga Dilshani. All Rights Reserved.
     </div>
+    
     <script>
         function showSection(sectionId) {
             var sections = document.querySelectorAll('.section');
@@ -122,6 +137,13 @@
             });
             var activeSection = document.getElementById(sectionId);
             activeSection.classList.add('active');
+           
+            var navbar = document.getElementById('navbar');
+            if (sectionId === 'about') {
+                navbar.style.display = 'none';
+            } else {
+                navbar.style.display = 'flex';
+            }
         }
     </script>
 </body>

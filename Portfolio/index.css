@@ -10,7 +10,7 @@ body {
     position: relative;
     width: 100%;
     height: 100vh;
-    background-image: url('./img/portfolio.jpeg');
+    background-image: url('./img/main.jpg');
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -20,14 +20,14 @@ body {
 }
 
 .image {
-    width: 300px;
-    height: 300px;
+    width: 200px;
+    height: 200px;
     border-radius: 50%;
     object-fit: cover; 
 }
 
 .photo {
-    padding-top: 10%;
+    padding-top: 5%;
     padding-left: 20%;
 }
 
@@ -60,7 +60,7 @@ body {
     position: relative;
     width: 100%;
     height: 100vh;
-    background-image: url('./img/background.png');
+    background-image: url('./img/main.jpg');
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -160,4 +160,49 @@ body {
 }
 .section.active {
     display: block;
+}
+.btn{
+    padding-top: 20%;
+    padding-left: 5%;
+    position: fixed;
+}
+.btn2{
+    padding-top: 10%;
+}
+.nav {
+    display: flex;
+    background: transparent;
+    height: 50px;
+    justify-content: center;
+    align-items: center;
+    position: fixed; 
+    top: 0;
+    width: 100%;
+    z-index: 1000; 
+    color: white;
+}
+
+.attribute {
+    margin-left: 45%;
+   
+}
+
+.name {
+    font-family: cursive;
+    font-weight: bold;
+}
+
+.attribute a {
+    font-weight: bold;
+    text-decoration: none;
+    font-family: "Merriweather", serif;
+    color: white;
+    padding: 10px 25px;
+}
+.btn button{
+    height: 50px;
+    width: 150px;
+    font-size: 20px;
+    font-weight: bold;
+   background: none;
 }
