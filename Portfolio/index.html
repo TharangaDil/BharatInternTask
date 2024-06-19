@@ -10,15 +10,13 @@
         <div class="nav">
             <div class="name">Tharanga Dilshani</div>
             <div class="attribute">
-                <a href="#" onclick="showSection('about')">About</a>
-                <a href="#" onclick="showSection('skill')">Skills</a>
-                <a href="#" onclick="showSection('project')">Projects</a>
-                <a href="#" onclick="showSection('resume')">Resume</a>
-                <a href="#" onclick="showSection('contact')">Contact</a>
-        
+                    <button onclick="showSection('skill')">Skills</button> 
+                    <button onclick="showSection('project')">Projects</button>
+                    <button onclick="showSection('resume')">Resume</button>
+                    <button  onclick="showSection('contact')">Contact</button> 
             </div>
         </div>
-        <section id="about">
+        <div id="about" class="about section">
             <div class="content">
                 <div class="data">
                  <div class="hello" >Hello, It's me</div>
@@ -31,15 +29,10 @@
                <div class="photo">
                  <img src="./img/photo.png" class="image" />
                </div>
-              <div>
-                <button>Skills</button> 
-                <button>Projects</button>
-                <button>Resume</button>
-                <button>Contact me</button>
-              </div> 
+             
              </div>
-        </section>
-        <section id="skill">
+            </div>
+        <div  id="skill" class="skill section">
             <div class="details">
                 <div class="topic">MY SKILLS</div>
                 <div class="all">
@@ -72,8 +65,8 @@
             </div>
             
 
-        </section>
-        <section id="project">
+        </div>
+        <div  id="project" class="project section">
             <div class="details">
                 <div class="topic">My Projects</div>
                 <div class="prtable">
@@ -104,8 +97,8 @@
                 </div>
                 
             </div>
-        </section>
-        <section id="resume">
+        </div>
+        <div id="resume" class="resume section">
             <div class="details">
                 <div class="topic">My Resume</div>
                 <div class="res">
@@ -115,8 +108,8 @@
                 </div>
                 
             </div>
-        </section>
-        <section id="contact">
+        </div>
+        <div  id="contact" class="contact section">
             <div class="details">
                 <div class="topic">Contact Me</div>
                 <div class="cm">
@@ -125,7 +118,10 @@
                     Phone Number:- +94 763556442
                 </div>
             </div>
-        </section>
+
+        </div>
+            
+        
 
         <div class="footer">
              &copy; Tharanga Dilshani. All Rights Reserved.
@@ -134,12 +130,14 @@
         </div>
 
         <script>
-            function showSection(sectionId) {
-                const section = document.getElementById(sectionId);
-                if (section) {
-                    section.scrollIntoView({ behavior: 'smooth' });
-                }
-            }
+           function showSection(sectionId) {
+            var sections = document.querySelectorAll('.section');
+            sections.forEach(function(section) {
+                section.classList.remove('active');
+            });
+            var activeSection = document.getElementById(sectionId);
+            activeSection.classList.add('active');
+        }
             </script>
         
     </body>
